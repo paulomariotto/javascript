@@ -1,0 +1,56 @@
+%navbar-principal {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    z-index: 4;
+    
+    
+}
+
+%drop-ul-li {
+    display: inline-block;
+    margin: 0 5px;          
+}
+%header {
+    width: 100%;
+    height: 40px;
+    text-align: end;
+}
+%main {
+    width: 100%;
+    margin:0 auto;
+    }
+%main-img {
+    width: 250px;
+    height: 210px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+
+%aside {
+    position: relative; 
+    top: 140px;
+    width: 80%;
+    margin: auto;
+}
+
+%img-aside1 {
+    width: 800px;
+    height: 500px;
+}
+
+%img-aside6 {
+    width: 600px;
+    height: 500px;
+}
+
+%img-c-2 {
+    width: 260px;
+    height: 260px;
+}
+%i-insta {
+    position:relative;
+    right: 75px;
+    bottom: 2px;
+}

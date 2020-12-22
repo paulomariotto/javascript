@@ -1,0 +1,1003 @@
+@import 'colors';
+@import 'extends';
+@import 'fonts';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    @extend %header;
+    background-color: $background-color-header;
+
+    ul {
+        list-style: $list-none;
+
+        li {
+            display: inline-block;
+            font-size: $font18;
+            font-family: $font-hind;
+
+            a {
+                text-decoration: $text-none;
+                color: $font-color-header;
+            }
+        }
+    }
+}
+
+main {
+    @extend %main;
+
+    img {
+        @extend %main-img;
+    }
+}
+
+.navbar-principal {
+    @extend %navbar-principal;
+    background-color: $background-color-navbar;
+    font-family: $font-hind;
+
+}
+
+.nav-menu-item {
+    text-decoration: $text-none;
+    color: #D8DEDE;
+    font-size: $font15;
+}
+
+
+.drop-bgcolor {
+    background-color: $drop-bgcolor;
+}
+
+.dropdown-menu {
+    ul {
+        list-style: $list-none;
+        text-align: $text-center;
+
+        li {
+            @extend %drop-ul-li;
+            font-size: $font16;
+
+            a {
+                text-decoration: $text-none;
+                color: $font-color;
+            }
+        }
+    }
+}
+
+.row {
+    .col-md-5 {
+        h1 {
+            font-family: $font-hind;
+            font-weight: $font700;
+            font-size: $font60;
+        }
+
+        p {
+            font-family: $font-hind;
+            font-weight: $font400;
+            font-size: $font25;
+        }
+
+    }
+
+    .col-md-7 {
+        text-align: center;
+    }
+}
+
+aside {
+    @extend %aside;
+    background-color: #A1A4A6;
+}
+
+.img-aside1,
+.img-aside2,
+.img-aside3,
+.img-aside4,
+.img-aside5,
+.img-aside6 {
+    @extend %img-aside1;
+
+}
+
+.carouselm7 {
+    margin: 20px 0;
+}
+
+.color-icono {
+    background-color: black;
+
+}
+
+.c-2 {
+    position: relative;
+    top: 100px;
+    text-align: $text-center;
+}
+
+.r-c-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-c-2 {
+    @extend %img-c-2;
+}
+
+.img-masvendidos {
+    margin-top: 25px;
+}
+
+.carousel-item-dimension {
+    width: 90%;
+    text-align: center;
+    margin-left: 100px;
+
+    .ul-carousel-image {
+        list-style: none;
+
+        .li-img-caousel-slide {
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}
+
+.carousel-image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-carousel {
+    background-color: #A1A4A6;
+}
+
+.img-carousel {
+    width: 260px;
+    height: 260px;
+}
+
+footer {
+    width: 100%;
+    background-color: $background-color-footer;
+    position: relative;
+    top: 250px;
+}
+
+.icono-insta {
+    @extend %i-insta;
+}
+
+.ul-navegacion {
+    li {
+
+        list-style: $list-none;
+
+        a {
+            font-family: $font-hind;
+            text-decoration: $text-none;
+            color: $font-color;
+
+        }
+    }
+}
+
+strong {
+    color: $font-color;
+}
+
+.ul-nav-menu {
+    background-color: $nav-menu-color;
+    height: 426px;
+    text-align: $text-center;
+
+    li {
+        list-style: $list-none;
+
+
+        a {
+            font-family: $font-hind;
+            text-decoration: $text-none;
+            color: $font-color;
+            margin-top: 50px;
+
+        }
+    }
+}
+
+.ul-cards {
+    li {
+        list-style: $list-none;
+
+        a {
+            font-family: $font-hind;
+            text-decoration: $text-none;
+            color: $font-color;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-quienessomos {
+    background-size: cover;
+    width: 700px;
+    height: 300px;
+}
+
+
+/* medias Querys */
+/*mobile*/
+@media only screen and (max-width:576px) {
+
+    header {
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .li-header1 {
+        position: relative;
+        left: 52px;
+    }
+
+    .li-header2 {
+        position: relative;
+        left: 25px;
+    }
+
+    aside {
+        position: relative;
+        top: 130px;
+        margin-bottom: -90px;
+        width: 100%;
+
+        .container {
+            .row {
+                .col-md-5 {
+                    order: 2;
+                    text-align: $text-center;
+
+                    h1 {
+                        font-size: $font40;
+                        position: relative;
+                        top: -40px;
+                    }
+
+                    p {
+                        font-size: $font16;
+                        position: relative;
+                        top: -60px;
+
+                    }
+
+
+
+
+                }
+
+                .col-md-7 {
+                    position: relative;
+                    top: -40px;
+
+                    .img-aside1,
+                    .img-aside2,
+                    .img-aside3,
+                    .img-aside4,
+                    .img-aside5,
+                    .img-aside6 {
+                        width: 90%;
+                        height: 100%;
+                    }
+
+                    .carouselm7 {
+                        .carousel-inner {
+                            height: 240px;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .img-masvendidos {
+        width: 55%;
+
+        h4 {
+            font-size: $font15;
+        }
+    }
+
+    .img-c-2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    section {
+        .container {
+            .row {
+                font-size: $font12;
+
+                .col-md-3 {
+                    width: 90px;                    
+                    position: relative; 
+                    left: -5px;
+
+                    .ul-nav-menu {
+                        width: 90px;
+                        height: 130px;
+                    }
+                }
+
+                .col-md-9 {
+                    text-align: center;
+                    position: relative;
+                    top: -146px;
+                    left: 93px;
+
+                    .ul-cards { 
+                        text-align: center;
+                        li {
+                            display: inline;
+                            .card-deck {
+                               
+                                display: flex;
+                                justify-content: space-around;
+                                width: 85%;
+                                
+                                .card {
+                                    width: 100px;
+                                    height: 197px;
+                                    font-size: $font12;
+                                    text-align: center;
+                                    .card-body {
+                                        h5 {
+                                            font-size: $font12;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    
+
+
+    footer {
+        position: relative;
+        top: 97px;
+        height: 1030px;
+
+        .container {
+            .row {
+                .col {
+                    position: relative;
+                    top: -8px;
+
+                    a {
+                        position: relative;
+                        top: 0px;
+
+                    }
+                }
+            }
+        }
+
+
+        .footer-navegacion {
+            .row {
+
+                .md4-navegacion {
+                    order: 1;
+                    position: relative;
+                    top: 0px;
+
+                    .container {
+                        h5 {
+                            font-size: $font18;
+                            text-align: $text-center;
+                        }
+
+                        .row {
+                            margin: auto;
+
+                            .navegacion1 {
+                                text-align: $text-center;
+
+                                .ul-navegacion {
+                                    width: 190px;
+                                    position: relative;
+                                    left: 0px;
+                                }
+                            }
+
+                            .navegacion2 {
+                                text-align: $text-center;
+
+                                .ul-navegacion {
+                                    width: 180px;
+                                    position: relative;
+                                    bottom: 146px;
+                                    left: 128px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .md4-mediosdepago {
+                    order: 3;
+                    text-align: $text-center;
+                    position: relative;
+                    top: -50px;
+                                .ul-navegacion {
+                                    .li-img-mpago {
+                                        .img-mpago {
+                                            width: 70px;
+                                            
+                                        }
+                                    }
+                                }
+                }
+
+                .md4-contactanos {
+                    order: 2;
+                    text-align: $text-center;
+                    position: relative;
+                    bottom: 80px;
+                }
+            }
+        }
+
+        .pie-footer {
+            p {
+                font-size: $font10;
+                margin-bottom: 0rem;
+                position: absolute;
+                bottom: 0px;
+            }
+
+            
+        }
+       
+    }
+
+    .carousel-dimensiontotal {
+        margin-left: 20px;
+    }
+
+    .h4-carousel {
+        font-size: $font16;
+    }
+
+    .section-carousel {
+        position: relative;
+        top: 0px;
+        height: 28%;
+
+        .carousel {
+            top: -36px;
+
+            .carousel-indicators {
+                position: absolute;
+                bottom: -12px;
+            }
+
+        }
+    }
+
+
+    .img-carousel {
+        width: 130px;
+        height: 150px;
+    }
+
+    .footer-sections {
+        top: 0px;
+    }
+
+.icono-whats-1-index {
+    font-size: $font15;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+.icono-whats-2-index {
+    font-size: $font15;
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+}
+.img-quienessomos {
+    width: 410px;
+    height: 150px;
+}
+.icono-whats-1 {
+    font-size: $font15;
+    position: fixed;
+    right: px;
+    bottom: 10px;
+}
+.icono-whats-2 {
+    font-size: $font15;
+    position: fixed;
+    right: 98px;
+    bottom: 60px;
+}
+
+}
+
+/*Table Styles*/
+@media only screen and (min-width:577px) and (max-width:768px) {
+    aside {
+        .container {
+            .row {
+                .col-md-5 {
+                    order: 2;
+                    text-align: $text-center;
+
+                    h1 {
+                        font-size: $font40;
+                    }
+
+                    p {
+                        font-size: $font16;
+                        position: relative;
+
+                    }
+
+
+
+
+                }
+
+                .col-md-7 {
+                    position: relative;
+                    top: -40px;
+
+                    .img-aside1,
+                    .img-aside2,
+                    .img-aside3,
+                    .img-aside4,
+                    .img-aside5,
+                    .img-aside6 {
+                        width: 90%;
+                        height: 300px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .img-masvendidos {
+        width: 51%;
+        
+
+        h4 {
+            font-size: $font16;
+        }
+    }
+
+    .img-c-2 {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    section {
+        .container {
+            .row {
+
+                font-size: $font14;
+
+                .col-md-3 {
+                    width: 125px;
+
+                    .ul-nav-menu {
+                        width: 125px;
+                        height: 200px;
+                    }
+                }
+
+                .col-md-9 {
+                    text-align: center;
+                    width: 442px;
+                    position: relative;
+                    bottom: 216px;
+                    left: 136px;
+
+                    .ul-cards {
+                        text-align: center;
+                        li {
+                            .card-deck {
+                                
+                                .card {
+                                    width: 80px;
+                                    height: 240px;
+                                    .card-body {
+                                        h5 {
+                                            font-size: $font14;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+   
+        
+     }
+     
+     .carousel-dimensiontotal {
+        margin-left: 30px;
+    }
+
+    .h4-carousel {
+        font-size: $font16;
+    }
+
+    .section-carousel {
+        position: relative;
+        top: 0px;
+        height: 28%;
+
+        .carousel {
+            top: -36px;
+
+            .carousel-indicators {
+                position: absolute;
+                bottom: -12px;
+            }
+
+        }
+    }
+
+
+    .img-carousel {
+        width: 135px;
+        height: 165px;
+    }
+
+    .footer-sections {
+        top: 15px;
+        text-align: center;
+    }
+
+
+    .img-quienessomos {
+        margin: 0 auto;
+        width: 515px;
+        height: 200px;
+    
+    }
+    .icono-whats-1-index {
+        font-size: $font15;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+    .icono-whats-2-index {
+        font-size: $font15;
+        position: fixed;
+        right: 15px;
+        bottom: 60px;
+    }
+
+}
+
+/*Table Desktop Style*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .img-c-2 {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    section {
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: $font12;
+
+                .col-md-3 {
+                    width: 150px;
+
+                    .ul-nav-menu {
+                        width: 150px;
+                    }
+                }
+
+                .col-md-9 {
+                    text-align: center;
+                    width: 442px;
+                    position: relative;
+                    bottom: 0px;
+                    left: 0px;
+
+                    .ul-cards {
+                        text-align: center;
+                        li {
+                            
+                            .card-deck {
+                                
+                                
+                                .card {
+                                    width: 80px;
+                                    height: 260px;
+                                    .card-body {
+                                        h5 {
+                                            font-size: $font15;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer-navegacion {
+        .row {
+            .md4-navegacion {
+                order: 1;
+
+                .container {
+                    h5 {
+                        text-align: $text-center;
+                    }
+
+                    .row {
+                        .navegacion1 {
+                            text-align: $text-center;
+
+                            .ul-navegacion {
+
+                                position: relative;
+                                left: -70px;
+                            }
+                        }
+
+                        .navegacion2 {
+                            text-align: $text-center;
+
+                            .ul-navegacion {
+
+                                position: relative;
+                                bottom: 0px;
+                                left: -59px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .md4-mediosdepago {
+                order: 2;
+                text-align: $text-center;
+                position: relative;
+                bottom: 0px;
+            }
+
+            .md4-contactanos {
+                order: 3;
+                text-align: $text-center;
+                position: relative;
+                bottom: 0px;
+            }
+        }
+
+    }
+
+    .pie-footer {
+        p {
+            font-size: $font15;
+        }
+    }
+
+    .footer-sections {
+        top: 0px;
+    }
+
+    .img-quienessomos {
+        margin: 0 auto;
+        width: 500px;
+        height: 210px;
+    
+    }
+    .icono-whats-1-index {
+        font-size: $font15;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+    .icono-whats-2-index {
+        font-size: $font15;
+        position: fixed;
+        right: 15px;
+        bottom: 60px;
+    }
+}
+
+/*extra large*/
+@media only screen and (min-width:992px) {
+    .img-c-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    aside {
+        .container {
+            .row {
+
+
+                .col-md-7 {
+                    position: relative;
+                    top: 0px;
+
+                    .img-aside1,
+                    .img-aside2,
+                    .img-aside3,
+                    .img-aside4,
+                    .img-aside5,
+                    .img-aside6 {
+                        width: 100%;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    section {
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: $font16;
+
+                .col-md-3 {
+                    width: 200px;
+
+                    .ul-nav-menu {
+                        width: 200px;
+                    }
+                }
+
+                .col-md-9 {
+                    text-align: center;
+                    width: 442px;
+                    position: relative;
+                    bottom: 0px;
+                    left: 0px;
+
+                    .ul-cards {
+                        text-align: center;
+                        li {
+                            .card-deck {
+                                
+                                .card {
+                                    width: 80px;
+                                    height: 350px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer-navegacion {
+        .row {
+            .md4-navegacion {
+                order: 1;
+
+                .container {
+                    h5 {
+                        text-align: $text-center;
+                    }
+
+                    .row {
+                        .navegacion1 {
+                            text-align: $text-center;
+                            right: 15px;
+
+                            .ul-navegacion {
+
+                                position: relative;
+                                left: 0px;
+                            }
+                        }
+
+                        .navegacion2 {
+                            text-align: $text-center;
+                            right: 37px;
+
+                            .ul-navegacion {
+
+                                position: relative;
+                                bottom: 0px;
+                                left: 0px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .md4-mediosdepago {
+                order: 2;
+                text-align: $text-center;
+                position: relative;
+                bottom: 0px;
+            }
+
+            .md4-contactanos {
+                order: 3;
+                text-align: $text-center;
+                position: relative;
+                bottom: 0px;
+            }
+        }
+
+    }
+
+    .pie-footer {
+        p {
+            font-size: $font15;
+        }
+    }
+
+    .footer-sections {
+        top: 0px;
+    }
+    .icono-whats-1-index {
+        font-size: $font15;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+    .icono-whats-2-index {
+        font-size: $font15;
+        position: fixed;
+        right: 15px;
+        bottom: 60px;
+    }
+
+}
