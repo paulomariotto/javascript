@@ -912,7 +912,7 @@ strong {
                                 
                                 .card {
                                     width: 80px;
-                                    height: 350px;
+                                    height: 400px;
                                 }
                             }
                         }
@@ -1000,4 +1000,56 @@ strong {
         bottom: 60px;
     }
 
+    #carrito {
+       display: none;
+
+    }
+
+    #img-carrito {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: -12px;
+        
+    }
+    #encabezado {
+        margin: 30px 0;
+    }
+    .submenu {
+        position: relative;
+    }
+    
+    .submenu #carrito{
+        display: none;
+    }
+    .submenu:hover #carrito{
+        display: block;
+        position: absolute;
+        right:-200px;
+    
+        top:112%;
+        z-index: 5;
+        background-color:#D8DEDE;
+        padding: 10px;
+        min-height: 316px;
+        min-width: 400px;
+    }
+    #vaciar-carrito {
+        position: relative;
+        top: 200px;
+        right: 144px;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 1px 3px;
+        background-color: silver;
+    }
+    thead {
+        tr {
+            th {
+                padding: 0 15px
+            }
+        }
+    }
 }

@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="u-full-width">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -25,6 +46,7 @@
       <li>
         <a class="nav-link" href="contacto.html">Contacto</a>
       </li>
+      
     </ul>
   </header>
   <main>
@@ -129,32 +151,32 @@
             
   
   
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 <li>
                   <div class="card-deck">
                     <div class="card">
                       <img src="Productos/picadores/picador-4partes-6colores.jpg" class="card-img-top" alt="picador atomic metal glinder de 4 partes">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Metal 4 partes</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Metal 4 partes</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="1">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-alunminio-4partes.jpg" class="card-img-top" alt="picador atomic de alunminio de 4 partes">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Alunminio 4 Partes</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Alunminio 4 Partes</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="2">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-antique-40mm.jpg" class="card-img-top" alt="picador atomic metal glinder de 3 partes">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Metal 3 partes</p>
-                       <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Metal 3 partes</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="3">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -165,25 +187,25 @@
                     <div class="card">
                       <img src="Productos/picadores/picador-metal52mm.jpg" class="card-img-top" alt="picador atomic metal glinder grande 52 mm 3 partes">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Metal Grande</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Metal Grande</p> 
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="4">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-metalskull3d50mm.jpg" class="card-img-top" alt="picador atomic metal glinder de calavera 50mm">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Calavera</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Calavera</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="5">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-plastico3partes.jpg" class="card-img-top" alt="picador atomic de plastico 3 partes">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Plastico 3 partes</p>
-                       <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Plastico 3 partes</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="6">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -195,25 +217,25 @@
                     <div class="card">
                       <img src="Productos/picadores/picador-plastico4partes.jpg" class="card-img-top" alt="picador atomic de plastico 4 partes varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Plastico 4 Partes</p>
-                       <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Plastico 4 Partes</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="7">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-plasticochico.jpg" class="card-img-top" alt="picador atomic de plastico chico varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Plastico Chico</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Plastico Chico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="8">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/picadores/picador-4partes-surtidos.jpg" class="card-img-top" alt="picador tabacco glinder de plastico varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Glinder</h5>
-                        <p class="card-text">Plastico</p>
-                        <button type="button" class="btn btn-outline-secondary">Agregar al Carrito</button>
+                        <h5 class="card-title marca">Glinder</h5>
+                        <p class="card-text descripcion">Plastico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="9">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -361,7 +383,7 @@
 
 
 
-
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
