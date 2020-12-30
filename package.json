@@ -14,5 +14,13 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulomariotto/javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulomariotto/javascript/issues"
+  },
+  "homepage": "https://github.com/paulomariotto/javascript#readme",
   "description": ""
 }
