@@ -7,8 +7,7 @@ let articulosCarrito = []
 listaProductos.addEventListener('click', agregarProducto)
 
 carrito.addEventListener('click', eliminarProducto)
-vaciarCarritoBtn.addEventListener('click, vaciarCarrito')
-
+vaciarCarritoBtn.addEventListener('click', 'vaciarCarrito')
 document.addEventListener('DOMContentLoaded', () => {
     articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || []
 
