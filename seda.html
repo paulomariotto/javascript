@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -117,39 +138,39 @@
                   <a href="seda.html">SEDA</a>
                 </li>
                 <li>
-                  <a href="blunt.html">BLUNT</a>
+                  <a href="#">BLUNT</a>
                 </li>
               </ul>
             </div>
             
   
   
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 <li>
                   <div class="card-deck">
                     <div class="card">
                       <img src="Productos/seda/seda-abadie500.jpg" class="card-img-top" alt="papelillo de seda abadie 500 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Abadie</h5>
-                        <p class="card-text">500 uds.</p>
-                        
+                        <h5 class="card-title marca">Abadie</h5>
+                        <p class="card-text descripcion">500 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="52">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-bobmarley.jpg" class="card-img-top" alt="papelillo de seda bob marley 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Bob Marley</h5>
-                        <p class="card-text">Gizeh50 uds.</p>
-                        
+                        <h5 class="card-title marca">Bob Marley</h5>
+                        <p class="card-text descripcion">Gizeh50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="53">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizeh.jpg" class="card-img-top" alt="papelillo de seda gizeh super fino 50 unidades verde claro">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Super Fino 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Super Fino 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="54">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -160,25 +181,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-gizehcornir.jpg" class="card-img-top" alt="papelillo de seda gizeh fino 50 unidades verde oscuro">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text"> Verde oscuro Fino 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion"> Verde oscuro Fino 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="55">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizehfino.jpg" class="card-img-top" alt="papelillo de seda gizeh fino 50 unidades rojo">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Rojo 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Rojo 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="56">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizehkingsize.jpg" class="card-img-top" alt="papelillo de seda super grande 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Super Grande 50 udsuds.</p>
-                       
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Super Grande 50 udsuds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="57">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -190,25 +211,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-gizehmagnet.jpg" class="card-img-top" alt="papelillo de seda gizeh mas tips 50 unidades verde">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">+Tips Verde 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">+Tips Verde 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="58">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizehmagnetfino.jpg" class="card-img-top" alt="papelillo de seda gizeh fino 100 unidades blanco">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Fino Blanco 100 uds.</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Fino Blanco 100 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="59">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizehmagnetoriginal.jpg" class="card-img-top" alt="papelillo de seda gizeh original 100 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">original 100 uds.</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">original 100 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="60">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -219,25 +240,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-gizehoriginal.jpg" class="card-img-top" alt="papelillo de seda gizeh original 50 unidades azul">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Original 50 uds. Azul</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Original 50 uds. Azul</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="61">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-gizehsuperfino.jpg" class="card-img-top" alt="papelillo de seda gizeh super fino 50 unidades blanco">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Super fino 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Super fino 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="62">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-hempart.jpg" class="card-img-top" alt="papelillo de seda hemp 50 unididades">
                       <div class="card-body">
-                        <h5 class="card-title">Hemp</h5>
-                        <p class="card-text">50 uds.</p>
-                       
+                        <h5 class="card-title marca">Hemp</h5>
+                        <p class="card-text descripcion">50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="63">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -248,25 +269,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-hempartsize.jpg" class="card-img-top" alt="papelillo de seda hemp extra grande">
                       <div class="card-body">
-                        <h5 class="card-title">Hemp</h5>
-                        <p class="card-text">Extra Grande 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Hemp</h5>
+                        <p class="card-text descripcion">Extra Grande 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="64">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libelia500.jpg" class="card-img-top" alt="papelillo de seda libelia 500 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">500 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">500 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="65">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliaextrathin.jpg" class="card-img-top" alt="papelillo de seda libelia 50 unidades negro">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Negro 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Negro 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="66">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -278,25 +299,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-libeliahavana.jpg" class="card-img-top" alt="papelillo de seda libelia havana 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Havana 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Havana 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="67">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliakingsize+tips.jpg" class="card-img-top" alt="papelillo de seda libelia extra grande mas tips 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Extra Grande 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Extra Grande 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="68">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliakingsize.jpg" class="card-img-top" alt="papelillo de seda libelia extra grande 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Extra Grande 50 uds.</p>uds
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Extra Grande 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="69">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -307,25 +328,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-libeliakingsizehavana.jpg" class="card-img-top" alt="papelillo de seda libelia extra grande havana 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Extra Grande Havana 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Extra Grande Havana 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="70">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliapureorganic.jpg" class="card-img-top" alt="papelillo de seda libelia organico 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Organico 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Organico 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="71">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliashortdelicate.jpg" class="card-img-top" alt="papelillo de seda libelia chico 50 unidades azul">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Chico 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Chico 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="72">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -336,25 +357,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-libeliashortextrathin.jpg" class="card-img-top" alt="papelillo de seda libelia chico extra fino 50 unidades negro">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Chico Extra Fino 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Chico Extra Fino 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="73">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-libeliashortvintage.jpg" class="card-img-top" alt="papelillo de seda libelia chico 50 unidades verde">
                       <div class="card-body">
-                        <h5 class="card-title">Libelia</h5>
-                        <p class="card-text">Chico Verde 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Libelia</h5>
+                        <p class="card-text descripcion">Chico Verde 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="74">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-mantrachoc.jpg" class="card-img-top" alt="papelillo de seda mantra de chocolate 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Chocolate 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Chocolate 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="75">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -366,25 +387,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-mantracoco.jpg" class="card-img-top" alt="papelillo de seda mantra de coco 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Coco 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Coco 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="76">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-mantradurazno.jpg" class="card-img-top" alt="papelillo de seda mantra de durazno 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Durazno 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Durazno 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="77">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-mantrafrutilla.jpg" class="card-img-top" alt="papelillo de seda mantra de frutilla 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Frutilla 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Frutilla 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="78">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -395,25 +416,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-mantramenta.jpg" class="card-img-top" alt="papelillo de seda mantra de menta 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">menta 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">menta 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="79">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-mantrauva.jpg" class="card-img-top" alt="papelillo de seda mantra de uva 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Uva 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Uva 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="80">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-mantravainilla.jpg" class="card-img-top" alt="papelillo de seda mantra de vainilla 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Mantra</h5>
-                        <p class="card-text">Vainilla 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Mantra</h5>
+                        <p class="card-text descripcion">Vainilla 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="81">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -424,25 +445,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-ocborganico.jpg" class="card-img-top" alt="papelillo de seda ocb organico 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Ocb</h5>
-                        <p class="card-text">Organico 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Ocb</h5>
+                        <p class="card-text descripcion">Organico 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="82">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-ocbpremiun.jpg" class="card-img-top" alt="papelillo de seda ocb premium 50 unidades negro">
                       <div class="card-body">
-                        <h5 class="card-title">Ocb</h5>
-                        <p class="card-text">Negro Premium 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Ocb</h5>
+                        <p class="card-text descripcion">Negro Premium 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="83">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-ocbxpert.jpg" class="card-img-top" alt="papelillo de seda ocb experto 50 unidades gris">
                       <div class="card-body">
-                        <h5 class="card-title">Ocb</h5>
-                        <p class="card-text">Expert50 uds.</p>
-                       
+                        <h5 class="card-title marca">Ocb</h5>
+                        <p class="card-text descripcion">Expert50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="84">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -454,25 +475,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-sativachoc.jpg" class="card-img-top" alt="papelillo de seda sativa club de chocolatte 50 unidades ">
                       <div class="card-body">
-                        <h5 class="card-title">Sativa Club</h5>
-                        <p class="card-text">Chocolate 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Sativa Club</h5>
+                        <p class="card-text descripcion">Chocolate 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="85">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-sativafrutilla.jpg" class="card-img-top" alt="papelillo de seda sativa club de frutilla 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Sativa Club</h5>
-                        <p class="card-text">Frutilla 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Sativa Club</h5>
+                        <p class="card-text descripcion">Frutilla 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="86">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-sativaoriginal.jpg" class="card-img-top" alt="papelillo de seda sativa club original 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Sativa Club</h5>
-                        <p class="card-text">Original 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Sativa Club</h5>
+                        <p class="card-text descripcion">Original 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="87">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -483,25 +504,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-sativauva.jpg" class="card-img-top" alt="papelillo de seda sativa club de uva 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Sativa Club</h5>
-                        <p class="card-text"> Uva 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Sativa Club</h5>
+                        <p class="card-text descripcion"> Uva 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="88">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-smokingblue.jpg" class="card-img-top" alt="papelillo de seda smoking azul 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Smoking</h5>
-                        <p class="card-text">Azul 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Smoking</h5>
+                        <p class="card-text descripcion">Azul 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="89">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-smokingbrown.jpg" class="card-img-top" alt="papelillo de seda smoking marron 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Smoking</h5>
-                        <p class="card-text">Marron 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Smoking</h5>
+                        <p class="card-text descripcion">Marron 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="90">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -512,25 +533,25 @@
                     <div class="card">
                       <img src="Productos/seda/seda-smokingdeluxe.jpg" class="card-img-top" alt="papelillo de seda smoking de luja 50 unidades negro">
                       <div class="card-body">
-                        <h5 class="card-title">Smoking</h5>
-                        <p class="card-text">De Luxe 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Smoking</h5>
+                        <p class="card-text descripcion">De Luxe 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="91">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-smokingmaster.jpg" class="card-img-top" alt="papelillo de seda smoking master gris">
                       <div class="card-body">
-                        <h5 class="card-title">Smoking</h5>
-                        <p class="card-text">Master Gris 50 uds.</p>
-                        
+                        <h5 class="card-title marca">Smoking</h5>
+                        <p class="card-text descripcion">Master Gris 50 uds.</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="92">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/seda/seda-smokingorganic.jpg" class="card-img-top" alt="papelillo de seda smoking organico 50 unidades">
                       <div class="card-body">
-                        <h5 class="card-title">Smoking</h5>
-                        <p class="card-text">Organico 50 uds.</p>
-                       
+                        <h5 class="card-title marca">Smoking</h5>
+                        <p class="card-text descripcion">Organico 50 uds.</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="93">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -677,7 +698,8 @@
 
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

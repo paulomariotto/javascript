@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -128,32 +149,32 @@
             </div>
   
               
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 <li>
                   <div class="card-deck">
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-atomic.jpg" class="card-img-top" alt=" maquina para armar tabaco atomic plastico varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Atomic</h5>
-                        <p class="card-text">Varios Colores</p>
-                        
+                        <h5 class="card-title marca">Atomic</h5>
+                        <p class="card-text descripcion">Varios Colores</p>
+                  <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="22">Agregar al Carrito</button>       
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-gizeh.jpg" class="card-img-top" alt="maquina para armar tabaco gizeh plastico blanco">
                       <div class="card-body">
-                        <h5 class="card-title">Gizeh</h5>
-                        <p class="card-text">Blanco</p>
+                        <h5 class="card-title marca">Gizeh</h5>
+                        <p class="card-text descripcion">Blanco</p>
                         
-                      </div>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="23">Agregar al Carrito</button>                      </div>
                     </div>
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-ocbmetalica.jpg" class="card-img-top" alt="maquina para armar tabaco ocb metalico">
                       <div class="card-body">
-                        <h5 class="card-title">Ocb</h5>
-                        <p class="card-text">Metalico</p>
-                       
+                        <h5 class="card-title marca">Ocb</h5>
+                        <p class="card-text descripcion">Metalico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="24">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -164,25 +185,26 @@
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-ocbplastica.jpg" class="card-img-top" alt="maquina para armar tabaco ocb plastico">
                       <div class="card-body">
-                        <h5 class="card-title">Ocb</h5>
-                        <p class="card-text">Plastico</p>
-                        
+                        <h5 class="card-title marca">Ocb</h5>
+                        <p class="card-text descripcion">Plastico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="25">Agregar al Carrito</button> 
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-standartgoma.jpg" class="card-img-top" alt="caja para armar tabaco de goma varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Rolling</h5>
-                        <p class="card-text">Goma</p>
+                        <h5 class="card-title marca">Rolling</h5>
+                        <p class="card-text descripcion">Goma</p>
                         
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="26">Agregar al Carrito</button>                    
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/maquinaparmar/maquina-tonking.jpg" class="card-img-top" alt="maquina para armar tabaco tonking plastico">
                       <div class="card-body">
-                        <h5 class="card-title">Tonking</h5>
-                        <p class="card-text">Plastico</p>
-                       
+                        <h5 class="card-title marca">Tonking</h5>
+                        <p class="card-text descripcion">Plastico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="27">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -322,7 +344,8 @@
 
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

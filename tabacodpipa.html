@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -124,31 +145,34 @@
   
             
   
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 <li>
                   <div class="card-deck">
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-7seas-regular.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">7Seas</h5>
-                        <p class="card-text">Regular</p>
+                        <h5 class="card-title marca">7Seas</h5>
+                        <p class="card-text descripcion">Regular</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="94">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-7seas-royal.jpg" class="card-img-top" alt="tabaco para pipa 7 seas royal">
                       <div class="card-body">
-                        <h5 class="card-title">7Seas</h5>
-                        <p class="card-text">Royal</p>
+                        <h5 class="card-title marca">7Seas</h5>
+                        <p class="card-text descripcion">Royal</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="95">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-7seasgold.png" class="card-img-top" alt="tabaco para pipa 7 seas gold">
                       <div class="card-body">
-                        <h5 class="card-title">7Seas</h5>
-                        <p class="card-text">Gold</p>
+                        <h5 class="card-title marca">7Seas</h5>
+                        <p class="card-text descripcion">Gold</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="96">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -160,24 +184,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-amphora-black-cavendich.jpg" class="card-img-top" alt="tabaco para pipa amphora negro cavendish">
                       <div class="card-body">
-                        <h5 class="card-title">Amphora</h5>
-                        <p class="card-text">Cavendish</p>
+                        <h5 class="card-title marca">Amphora</h5>
+                        <p class="card-text descripcion">Cavendish</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="97">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-amphora-full-aroma.jpg" class="card-img-top" alt="tabaco para pipa full aroma">
                       <div class="card-body">
-                        <h5 class="card-title">Amphora</h5>
-                        <p class="card-text">Full Aroma</p>
+                        <h5 class="card-title marca">Amphora</h5>
+                        <p class="card-text descripcion">Full Aroma</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="98">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-amphora-rich-aroma.jpg" class="card-img-top" alt="tabaco para pipa amphora rico aroma">
                       <div class="card-body">
-                        <h5 class="card-title">Amphora</h5>
-                        <p class="card-text">Rich Aroma</p>
+                        <h5 class="card-title marca">Amphora</h5>
+                        <p class="card-text descripcion">Rich Aroma</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="99">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -190,24 +217,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-amphora-special-n2.jpg" class="card-img-top" alt="tabaco para pipa amphora especial numero 2">
                       <div class="card-body">
-                        <h5 class="card-title">Amphora</h5>
-                        <p class="card-text">Special n2</p>
+                        <h5 class="card-title marca">Amphora</h5>
+                        <p class="card-text descripcion">Special n2</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="100">Agregar al Carrito</button>
                        
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-amphora-special-n8.jpg" class="card-img-top" alt="tabaco para pipa amphora especial numero 8">
                       <div class="card-body">
-                        <h5 class="card-title">Amphora</h5>
-                        <p class="card-text">Special n8</p>
+                        <h5 class="card-title marca">Amphora</h5>
+                        <p class="card-text descripcion">Special n8</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="101">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
-                      <img src="Productos/tabaco-para-pipa/tabacopipa-argento duo.jpg" class="card-img-top" alt="tabaco para pipa argento duo">
+                      <img src="Productos/tabaco-para-pipa/tabacopipa-argento-duo.jpg" class="card-img-top" alt="tabaco para pipa argento duo">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Duo</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Duo</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="102">Agregar al Carrito</button>
                         
                       </div>
                     </div>
@@ -219,24 +249,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-latak-mix.jpg" class="card-img-top" alt="tabaco para pipa argento latakia">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Latak Mix</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Latak Mix</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="103">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-natural.jpg" class="card-img-top" alt="tabaco para pipa argento natural">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Natural</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Natural</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="104">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-negro.jpg" class="card-img-top" alt="tabaco para pipa argento tabaco negro">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Negro</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Negro</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="105">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -248,24 +281,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-nougat.jpg" class="card-img-top" alt="tabaco para pipa argento de mani">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Nougat</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Nougat</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="106">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-vainilla.jpg" class="card-img-top" alt="tabaco para pipa argento de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="107">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-argento-whisky-choc.jpg" class="card-img-top" alt="tabaco para pipa argento de whisky con chocolate">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Wisky con Chocolate</p>
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Wisky con Chocolate</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="108">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -278,24 +314,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-black-and-bright.jpg" class="card-img-top" alt="tabaco para pipa val halteren negro y brillante">
                       <div class="card-body">
-                        <h5 class="card-title">Black and Bright</h5>
-                        <p class="card-text">Negro</p>
+                        <h5 class="card-title marca">Black and Bright</h5>
+                        <p class="card-text descripcion">Negro</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="109">Agregar al Carrito</button>
                        
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-brigg-regular.png" class="card-img-top" alt="tabaco para pipa brigg golden virginia regular">
                       <div class="card-body">
-                        <h5 class="card-title">Brigg</h5>
-                        <p class="card-text">Regular</p>
+                        <h5 class="card-title marca">Brigg</h5>
+                        <p class="card-text descripcion">Regular</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="110">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-brigg-vainilla.png" class="card-img-top" alt="tabaco para pipa brigg de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Brigg</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Brigg</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="111">Agregar al Carrito</button>
                         
                       </div>
                     </div>
@@ -307,24 +346,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-camaguey-americanblend.jpg" class="card-img-top" alt="tabaco para pipa camaguey american blend">
                       <div class="card-body">
-                        <h5 class="card-title">Camaguey</h5>
-                        <p class="card-text">American Blend</p>
+                        <h5 class="card-title marca">Camaguey</h5>
+                        <p class="card-text descripcion">American Blend</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="112">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-camaguey-choc.jpg" class="card-img-top" alt="tabaco para pipa camaguey chocolate">
                       <div class="card-body">
-                        <h5 class="card-title">Camaguey</h5>
-                        <p class="card-text">Chocolate</p>
+                        <h5 class="card-title marca">Camaguey</h5>
+                        <p class="card-text descripcion">Chocolate</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="113">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-camaguey-vainilla.jpg" class="card-img-top" alt="tabaco para pipa camaguey de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Camaguey</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Camaguey</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="114">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -336,83 +378,59 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-aromatico.jpg" class="card-img-top" alt="tabaco para pipa fighter aromatico">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Aromatico</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Aromatico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="115">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-blackvainilla.jpg" class="card-img-top" alt="tabaco para pipa fighter de vainilla negra">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Black Viainilla</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Black Viainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="116">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-cherry.jpg" class="card-img-top" alt="tabaco para pipa fighter de cereza">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Cherry</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Cherry</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="117">Agregar al Carrito</button>
                        
                       </div>
                     </div>
                   </div>
                 </li>
-                <br><br>              
-                
-                <li>
-                  <div class="card-deck">
-                    <div class="card">
-                      <img src="Productos/tabaco-para-armar/tabacoarmar-argento-negro.jpg" class="card-img-top" alt="tabaco para armar argento tabaco negro">
-                      <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Negro</p>
-                       
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="Productos/tabaco-para-armar/tabacoarmar-argento-uva.jpg" class="card-img-top" alt="tabaco para armar argento de uva">
-                      <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Uva</p>
-                        
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="Productos/tabaco-para-armar/tabacoarmar-argento-vainilla.jpg" class="card-img-top" alt="tabaco para armar argento de vainilla">
-                      <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Vainilla</p>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <br><br> 
-                <li>
-                  <div class="card-deck">
+                <br><br>                 
+     marca            <li>
+   descripcion                <div class="card-deck">
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-choc.jpg" class="card-img-top" alt="tabaco para pipa fighter chocolate">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Chocolate</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Chocolate</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="118">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-durazno.jpg" class="card-img-top" alt="tabaco para pipa fighter de durazno">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Durazno</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Durazno</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="119">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-miel.jpg" class="card-img-top" alt="tabaco para pipa fighter de miel">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Miel</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Miel</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="120">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -424,24 +442,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-ron.jpg" class="card-img-top" alt="tabaco para pipa fighter de ron">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Ron</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Ron</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="121">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-vainilla.jpg" class="card-img-top" alt="tabaco para pipa fighter de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="122">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-fighter-wisky.jpg" class="card-img-top" alt="tabaco para pipa fighter de wisky">
                       <div class="card-body">
-                        <h5 class="card-title">Fighter</h5>
-                        <p class="card-text">Wisky</p>
+                        <h5 class="card-title marca">Fighter</h5>
+                        <p class="card-text descripcion">Wisky</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="123">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -454,24 +475,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-macbaren-mixture.jpg" class="card-img-top" alt="tabaco para pipa macbaren tabacos mesclados">
                       <div class="card-body">
-                        <h5 class="card-title">Macbaren</h5>
-                        <p class="card-text">Mixture</p>
+                        <h5 class="card-title marca">Macbaren</h5>
+                        <p class="card-text descripcion">Mixture</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="124">Agregar al Carrito</button>
                        
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-macbaren-vainilla.jpg" class="card-img-top" alt="tabaco para pipa macbaren de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Macbaren</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Macbaren</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="125">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-peterson-aran.jpg" class="card-img-top" alt="tabaco para pipa petersan aran mescla de tabacos">
                       <div class="card-body">
-                        <h5 class="card-title">Peterson</h5>
-                        <p class="card-text">Aran</p>
+                        <h5 class="card-title marca">Peterson</h5>
+                        <p class="card-text descripcion">Aran</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="126">Agregar al Carrito</button>
                         
                       </div>
                     </div>
@@ -483,24 +507,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-peterson-connemara.jpg" class="card-img-top" alt="tabaco para pipa peterson cereza cavandish y blend">
                       <div class="card-body">
-                        <h5 class="card-title">Peterson</h5>
-                        <p class="card-text">Connemara Black</p>
+                        <h5 class="card-title marca">Peterson</h5>
+                        <p class="card-text descripcion">Connemara Black</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="127">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-peterson-irish.jpg" class="card-img-top" alt="tabaco para pipa peterson irish">
                       <div class="card-body">
-                        <h5 class="card-title">Peterson</h5>
-                        <p class="card-text">Irish</p>
+                        <h5 class="card-title marca">Peterson</h5>
+                        <p class="card-text descripcion">Irish</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="128">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-peterson-wildatlantic.jpg" class="card-img-top" alt="tabaco para pipa peterson wild atlantic">
                       <div class="card-body">
-                        <h5 class="card-title">Peterson</h5>
-                        <p class="card-text">Wild Atlantic</p>
+                        <h5 class="card-title marca">Peterson</h5>
+                        <p class="card-text descripcion">Wild Atlantic</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="129">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -512,24 +539,27 @@
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-saints-americanb.jpg" class="card-img-top" alt="tabaco para pipa saints american blend">
                       <div class="card-body">
-                        <h5 class="card-title">Saints</h5>
-                        <p class="card-text">American Blend</p>
+                        <h5 class="card-title marca">Saints</h5>
+                        <p class="card-text descripcion">American Blend</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="130">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-saints-choc.jpg" class="card-img-top" alt="tabaco para pipa saints de chocolate">
                       <div class="card-body">
-                        <h5 class="card-title">Saints</h5>
-                        <p class="card-text">Chocolate</p>
+                        <h5 class="card-title marca">Saints</h5>
+                        <p class="card-text descripcion">Chocolate</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="131">Agregar al Carrito</button>
                         
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/tabaco-para-pipa/tabacopipa-saints-vainilla.jpg" class="card-img-top" alt="tabaco para pipa saints de vainilla">
                       <div class="card-body">
-                        <h5 class="card-title">Saints</h5>
-                        <p class="card-text">Vainilla</p>
+                        <h5 class="card-title marca">Saints</h5>
+                        <p class="card-text descripcion">Vainilla</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="132">Agregar al Carrito</button>
                        
                       </div>
                     </div>
@@ -679,7 +709,8 @@
 
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1 li-header-hover">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,13 +121,22 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
   <!-- Fin del Menu-->
+  <div class="container" style="position: relative; top: 100px;">
+    <div class="row">
+      <div class="col-md-3">        
+      </div>        
+      
+      <did id="lista-productos" class="col-md-9 text-center">
+      </div>  
+    </div>        
+  </div>
   
   <aside>
     <div class="container">
@@ -475,7 +505,8 @@
 </footer>
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <script src="js/indexapp.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

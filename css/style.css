@@ -818,7 +818,7 @@ aside .container .row .col-md-7 .img-aside6 {
 
   #vaciar-carrito {
     position: relative;
-    top: 200px;
+    top: 5px;
     right: 144px;
     color: black;
     font-size: 20px;
@@ -831,6 +831,7 @@ aside .container .row .col-md-7 .img-aside6 {
   thead tr th {
     padding: 0 15px;
   }
+  
 }
 
 /*# sourceMappingURL=style.css.map */

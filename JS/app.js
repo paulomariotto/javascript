@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function vaciarCarrito() {
     borrarHTML()
     articulosCarrito = []
-    guardarStorage()
+    
 }
 
 function agregarProducto(e) {
@@ -27,6 +27,7 @@ function agregarProducto(e) {
 
         productoSeleccionado.querySelector('button').getAttribute('data-id')
         obtenerDatosProducto(productoSeleccionado)
+        guardarStorage()
     }
 }
 
@@ -59,7 +60,7 @@ function obtenerDatosProducto(producto) {
     if (existe) {
         const productos = articulosCarrito.map(producto => {
             if (producto.id === productoCarrito.id) {
-                producto.cantidad++
+                producto.cantidad
                 // producto.precio = productoAgregado.precio*producto.cantidad
                 //producto.precio = Number(productoAgregado.precio.slice(1)) * producto.cantidad
                 return producto
@@ -72,12 +73,6 @@ function obtenerDatosProducto(producto) {
         articulosCarrito = [...articulosCarrito, productoAgregado]
     }
 
-
-
-    /*agregar el procuto al carrito */
-    //articulosCarrito = [...articulosCarrito, productoAgregado]
-
-    articulosCarrito.push(productoAgregado)
     insertarCarritoHTML()
 
 
@@ -87,16 +82,16 @@ function insertarCarritoHTML() {
     borrarHTML()
 
     articulosCarrito.forEach(producto=> {
-        const {marca, descripcion, cantidad, id} = producto
+        const {marca, descripcion, cantidad, id, imagen} = producto
 
         const row = document.createElement('tr')
 
-        row.innerHTML = 
-        '<td><img src = "${imagen}"></td> '           
-        '<td>${marca}</td> '
-        '<td>${descripcion}</td>'                    
-        '<td>${cantidad}</td>'
-        '<td><a href="#" class="borrar-producto" data - id="${id}" > X </a></td>'
+        row.innerHTML = `
+        <th><img src = "${imagen}" style="height: 130px; padding: 5px;"></th>           
+        <th>${marca}</th> 
+        <th>${descripcion}</th>                   
+        <th>${cantidad}</th>
+        <th><a href="#" class="borrar-producto" data - id="${id}" > X </a></th> `
         
        
             
@@ -115,7 +110,7 @@ function guardarStorage() {
 
 function borrarHTML() {
 
-    //contenedorCarrito.innerHTML = ''
+    
 
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)

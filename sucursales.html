@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -119,10 +140,12 @@
             <h5>Caseros</h5>
             <p>Avenida San Martin 2554</p>
             <br><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.4945104569872!2d-58.56193!3d-34.
-            605272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e761a96eb3f01c4!2sTabaco%20Club!5e0!3m2!1ses-419!2sar!4v1603122256006!5m2!1ses-419!2sar" 
-            width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
- 
+            <div id="mapaCaseros">
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.4945104569872!2d-58.56193!3d-34.
+    605272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e761a96eb3f01c4!2sTabaco%20Club!5e0!3m2!1ses-419!2sar!4v1603122256006!5m2!1ses-419!2sar" 
+    width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
        
         <div class="col-md-6">
@@ -130,10 +153,11 @@
             <h5>Villa Ballester</h5>            
             <p>Pacífico Rodríguez 4850</p>
             <br><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52578.70601901567!2d-58.554432000000006!3d-34.
-            549273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x184e94af2222ce8f!2sTabaco%20Club!5e0!3m2!1ses-419!2sar!4v1602691141380!5m2!1ses-419!2sar" 
-            width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+            <div class="mapaGoogle">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52578.70601901567!2d-58.554432000000006!3d-34.
+              549273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x184e94af2222ce8f!2sTabaco%20Club!5e0!3m2!1ses-419!2sar!4v1602691141380!5m2!1ses-419!2sar" 
+              width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
     </div>
 
@@ -267,7 +291,7 @@
 
 
 
-
+<script src="js/indexapp.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

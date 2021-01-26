@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -123,7 +144,7 @@
 
 
 
-        <div class="col-md-9 text-center">
+        <div id="lista-productos" class="col-md-9 text-center">
 
           <ul class="ul-cards">
             <li>
@@ -131,25 +152,25 @@
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizcarb.jpg" class="card-img-top" alt="filtros gizeh carboal 100 unidades 8mm">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">Charcoal</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">Charcoal</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="28">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizehslim.jpg" class="card-img-top" alt="filtro gizeh slim 120 unidades 6mm">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">Slim</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="29">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizehtubosilver.jpg" class="card-img-top" alt="filtros gizeh silver tips 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">Silve</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">Silver</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="30">Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -160,25 +181,25 @@
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizexslim.jpg" class="card-img-top" alt="filtros gizeh extra slim 120unidades 5.3mm">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">X Slim</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">X Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="31">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizreg.jpg" class="card-img-top" alt="filtros gizeh regular 100 unidades 8mm">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">Regular</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">Regular</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="32">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-gizslim.jpg" class="card-img-top" alt="filtros gizeh charcoal slim 120 unidades 6mm">
                   <div class="card-body">
-                    <h5 class="card-title">Gizeh</h5>
-                    <p class="card-text">Charcoal SlimLibelia</p>
-
+                    <h5 class="card-title marca">Gizeh</h5>
+                    <p class="card-text descripcion">Charcoal Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="33">Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -190,24 +211,25 @@
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliaextraslim.jpg" class="card-img-top" alt="filtros libelia extra slim 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Libelia</h5>
-                    <p class="card-text">Extra Slim</p>
-
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Extra Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="34">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliahavana.jpg" class="card-img-top" alt="filtros libelia havana slim 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Libelia</h5>
-                    <p class="card-text">Havanna</p>
-
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Havanna</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="35">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliaregular.jpg" class="card-img-top" alt="filtros libelia regular 200 unidades">
-                  <div class="card-body">Libelia</h5>
-                    <p class="card-text">Regular</p>
-
+                  <div class="card-body">
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Regular</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="36">Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -218,25 +240,25 @@
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliaslim.jpg" class="card-img-top" alt="filtros libelia slim 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Libelia</h5>
-                    <p class="card-text">Slim</p>
-                    
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="37">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliaslimlong.jpg" class="card-img-top" alt="filtros libelia slim longo 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Libelia</h5>
-                    <p class="card-text">Slim Long</p>
-                    
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Slim Long</p>
+                  <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="38">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-libeliaslimmint.jpg" class="card-img-top" alt="filtros libelia menta slim 200 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Libelia</h5>
-                    <p class="card-text">Slim Mint</p>
-                   
+                    <h5 class="card-title marca">Libelia</h5>
+                    <p class="card-text descripcion">Slim Mint</p>
+                  <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="39">Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -247,25 +269,25 @@
                 <div class="card">
                   <img src="Productos/filtros/filtro-ocbregular.jpg" class="card-img-top" alt="filtros ocb regular 100 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Ocb</h5>
-                    <p class="card-text">Regular</p>
-                    
+                    <h5 class="card-title marca">Ocb</h5>
+                    <p class="card-text descripcion">Regular</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="40">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-ocbslim.jpg" class="card-img-top" alt="filtros ocb slim 150 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Ocb</h5>
-                    <p class="card-text">Slim</p>
-                    
+                    <h5 class="card-title marca">Ocb</h5>
+                    <p class="card-text descripcion">Slim</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="41">Agregar al Carrito</button>
                   </div>
                 </div>
                 <div class="card">
                   <img src="Productos/filtros/filtro-ocbslimeco.jpg" class="card-img-top" alt="filtros ocb slim organico 120 unidades">
                   <div class="card-body">
-                    <h5 class="card-title">Ocb</h5>
-                    <p class="card-text">Slim Organico</p>
-                   
+                    <h5 class="card-title marca">Ocb</h5>
+                    <p class="card-text descripcion">Slim Organico</p>
+                    <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="42">Agregar al Carrito</button>
                   </div>
                 </div>
               </div>
@@ -419,7 +441,8 @@
 
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

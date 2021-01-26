@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -120,7 +141,7 @@
             </div>
   
             
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 
                 <li>
@@ -128,25 +149,25 @@
                     <div class="card">
                       <img src="Productos/pipas/pipa-argentopremiun.jpg" class="card-img-top" alt="pipa raiz argento premium">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Premium</p>
-                        
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Premium</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="10">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-maderaeconomica.jpg" class="card-img-top" alt="pipa de madera economica">
                       <div class="card-body">
-                        <h5 class="card-title">Argento</h5>
-                        <p class="card-text">Madera</p>
-                        
+                        <h5 class="card-title marca">Argento</h5>
+                        <p class="card-text descripcion">Madera</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="11">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizbaby.png" class="card-img-top" alt=" pipa raiz baby souvenir">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Baby</p>
-                       
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Baby</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="12">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -157,25 +178,25 @@
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizchicalabrada.jpg" class="card-img-top" alt="pipa raiz chica labrada">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Chica Labrada</p>
-                        
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Chica Labrada</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="13">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizgramdelisa9mmmate.jpg" class="card-img-top" alt="pipa raiz grande lisa">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Grande Lisa</p>
-                        
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Grande Lisa</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="14">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizgrandeboquillaacrilico.jpg" class="card-img-top" alt="pipa raiz grande de boquilla acrilica">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Boquilla acrilico</p>
-                       
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Boquilla acrilico</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="15">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -187,25 +208,25 @@
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizgrandesemilabrada.jpg" class="card-img-top" alt="pipa raiz grande semi labrada">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Semi Labrada</p>
-                       
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Semi Labrada</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="16">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizlecturamolina.jpg" class="card-img-top" alt="pipa raiz lectura molina">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Lectura Molina</p>
-                        
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Lectura Molina</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="17">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/pipas/pipa-raizmedianalabrada.jpg" class="card-img-top" alt="pipa raiz mediana labrada">
                       <div class="card-body">
-                        <h5 class="card-title">Raiz</h5>
-                        <p class="card-text">Media Labrada</p>
-                        
+                        <h5 class="card-title marca">Raiz</h5>
+                        <p class="card-text descripcion">Media Labrada</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="18">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -353,7 +374,8 @@
 
 
 
-
+<script src="js/buscar.js"></script>
+<script src="js/app.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

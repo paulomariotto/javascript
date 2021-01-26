@@ -16,6 +16,27 @@
 <body>
   <header>
     <ul>
+      <li class="submenu">
+        <img src="iconos/34627 (2).svg" alt="" id="img-carrito">
+        <div id="carrito">
+           
+          <table id="lista-carrito" class="">
+            <thead>
+              <tr>
+                <th class="th-imagen-carrito">Imagen</th>
+                <th>Marca</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+                <th class="borrar-producto"></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+         </div>
+        
+       
+      </li>
       <li class="li-header1">
         <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
       </li>
@@ -74,7 +95,7 @@
             style="max-width: 212px;">
             <a class="dropdown-item" href="seda.html" data-toggle="tooltip" data-placement="right">PAPEL DE SEDA</a>
               
-            <a class="dropdown-item" href="blunt.html" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
+            <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right">PAPEL BLUNT</a>
               
             
 </div>
@@ -100,9 +121,9 @@
 
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 buscar-bottom">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+      <form id="formulario" class="form-inline my-2 my-lg-0 buscar-bottom">
+        <input id="buscador" class="form-control mr-sm-2" type="search" aria-label="Search">
+        <button id="submit-buscador" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -128,32 +149,32 @@
             </div>
   
            
-            <div class="col-md-9 text-center">
+            <div id="lista-productos" class="col-md-9 text-center">
               <ul class="ul-cards">
                 <li>
                   <div class="card-deck">
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-cadela-plastico.jpg" class="card-img-top" alt="encendedor candela de plastico varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Candela</h5>
-                        <p class="card-text">Varios Colores</p>
-                        
+                        <h5 class="card-title marca">Candela</h5>
+                        <p class="card-text descripcion">Varios Colores</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="43">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-candela-eletronico.jpg" class="card-img-top" alt="encendedor eletronico candela color negro">
                       <div class="card-body">
-                        <h5 class="card-title">Candela</h5>
-                        <p class="card-text">Eletronico</p>
-                        
+                        <h5 class="card-title marca">Candela</h5>
+                        <p class="card-text descripcion">Eletronico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="44">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-catalitico-magiclick-goma-turbo.jpg" class="card-img-top" alt="encendedor catalitico magiclick de goma turbo varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Magiclick</h5>
-                        <p class="card-text">Catalitico</p>
-                       
+                        <h5 class="card-title marca">Magiclick</h5>
+                        <p class="card-text descripcion">Catalitico</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="45">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -164,25 +185,25 @@
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-catalitico-magiclickvipblack.jpg" class="card-img-top" alt="encendedor catalitico magiclick vip negro">
                       <div class="card-body">
-                        <h5 class="card-title">Magiclick</h5>
-                        <p class="card-text">Catalitico</p>
-                        
+                        <h5 class="card-title marca">Magiclick</h5>
+                        <p class="card-text descripcion">Catalitico</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="46">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-catalitico-metalvippremiun.jpg" class="card-img-top" alt="encendedor catalitico metal premiun colores bronze y plata">
                       <div class="card-body">
-                        <h5 class="card-title">Magiclick</h5>
-                        <p class="card-text">Metal Premium</p>
-                        
+                        <h5 class="card-title marca">Magiclick</h5>
+                        <p class="card-text descripcion">Metal Premium</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="47">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-catalitico-ronsoneletrolite.jpg" class="card-img-top" alt="encendedor catalitico ronson eletrolite varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Ronson</h5>
-                        <p class="card-text">Eletrolite</p>
-                       
+                        <h5 class="card-title marca">Ronson</h5>
+                        <p class="card-text descripcion">Eletrolite</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="48">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
@@ -194,30 +215,30 @@
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-eletronico-magiclickslideblack.jpg" class="card-img-top" alt="encendedor eletronico magiclick slide negro">
                       <div class="card-body">
-                        <h5 class="card-title">Magiclick</h5>
-                        <p class="card-text">Slide Black</p>
-                       
+                        <h5 class="card-title marca">Magiclick</h5>
+                        <p class="card-text descripcion">Slide Black</p>
+                       <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="49">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-piedra-clippermini.jpg" class="card-img-top" alt="encendedor a piedra clipper chico varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Clipper</h5>
-                        <p class="card-text">Mini</p>
-                        
+                        <h5 class="card-title marca">Clipper</h5>
+                        <p class="card-text descripcion">Mini</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="50">Agregar al Carrito</button>
                       </div>
                     </div>
                     <div class="card">
                       <img src="Productos/Encendedores/encendedor-piedra-cllipermaxi.jpg" class="card-img-top" alt="encendedor a piedra clipper grande varios colores">
                       <div class="card-body">
-                        <h5 class="card-title">Clipper</h5>
-                        <p class="card-text">Maxi</p>
-                        
+                        <h5 class="card-title marca">Clipper</h5>
+                        <p class="card-text descripcion">Maxi</p>
+                        <button type="button" class="btn btn-outline-secondary agregar-carrito" data-id="51">Agregar al Carrito</button>
                       </div>
                     </div>
                   </div>
-                </li>
-  
+                </li> marca
+  descripcion 
               </ul>
               
               
